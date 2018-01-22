@@ -18,7 +18,7 @@
         </context:component-scan>
         
         <amq:connectionFactory id="amqConnectionFactory"
-						   brokerURL="tcp://127.0.0.1:61616" userName="admin" password="admin"  />
+						   brokerURL="tcp://127.0.0.1:61616" userName="admin" password="admin"/>
 						   
 		<bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
 		<property name="targetConnectionFactory" ref="amqConnectionFactory"></property>
